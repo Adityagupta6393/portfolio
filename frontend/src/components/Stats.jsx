@@ -40,7 +40,7 @@ const Stats = () => {
         setGithubLoading(true);
 
         const response = await axios.get(
-          "http://localhost:5000/api/github"
+          `https://portfolio-2n34.onrender.com/api/github`
         );
 
         if (response.data.success) {
@@ -67,7 +67,7 @@ const Stats = () => {
         setLeetcodeLoading(true);
 
         const response = await axios.get(
-          "http://localhost:5000/api/leetcode"
+          `https://portfolio-2n34.onrender.com/api/leetcode`
         );
 
         if (response.data.success) {
